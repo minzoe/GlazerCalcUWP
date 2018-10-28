@@ -8,7 +8,26 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid HorizontalAlignment="Left">
+        <TextBox HorizontalAlignment="Left" Margin="412,55,0,0" Text="Glazer Calculator" VerticalAlignment="Top" IsReadOnly="True" FontSize="22" FontWeight="Bold" BorderThickness="0,0,0,0"/>
+        <TextBox HorizontalAlignment="Left" Margin="412,146,0,0" Text="Width:" VerticalAlignment="Top" FontSize="12" IsReadOnly="True" BorderThickness="0,0,0,0"/>
+        <TextBox HorizontalAlignment="Left" Margin="412,202,0,0" Text="Height:" VerticalAlignment="Top" FontSize="12" IsReadOnly="True" BorderThickness="0,0,0,0"/>
+        <TextBox HorizontalAlignment="Left" Margin="409,265,0,0" Text="Tint Color:" VerticalAlignment="Top" FontSize="12" IsReadOnly="True" BorderThickness="0,0,0,0"/>
+        <TextBox HorizontalAlignment="Left" Margin="413,331,0,0" Text="Quantity:" VerticalAlignment="Top" FontSize="12" IsReadOnly="True" BorderThickness="0,0,0,0"/>
+        <TextBox HorizontalAlignment="Left" Margin="392,429,0,0" Text="Length of Wood:" VerticalAlignment="Top" FontSize="12" IsReadOnly="True" BorderThickness="0,0,0,0"/>
+        <TextBox HorizontalAlignment="Left" Margin="400,482,0,0" Text="Area of Glass:" VerticalAlignment="Top" FontSize="12" IsReadOnly="True" BorderThickness="0,0,0,0"/>
+        <ComboBox HorizontalAlignment="Left" Margin="530,265,0,0" VerticalAlignment="Top" FontSize="12" PlaceholderText="Color">
+            <ComboBoxItem Background="Black" Content="Black" FontSize="12" Foreground="White"/>
+            <ComboBoxItem Background="Brown" Content="Brown" FontSize="12" Foreground="White"/>
+            <ComboBoxItem Background="Blue" Content="Blue" FontSize="12" Foreground="White"/>
+        </ComboBox>
+        <TextBox x:Name="widthInput" HorizontalAlignment="Left" Margin="539,146,0,0" Text="" VerticalAlignment="Top" FontSize="12" BorderThickness="2,2,2,2" TextChanged="widthInput_TextChanged"/>
+        <TextBox x:Name="heightInput" HorizontalAlignment="Left" Margin="539,202,0,0" Text="" VerticalAlignment="Top" FontSize="12" BorderThickness="2,2,2,2" TextChanged="heightInput_TextChanged"/>
+        <TextBox x:Name="lengthOutput" HorizontalAlignment="Left" Margin="539,429,0,0" Text="" VerticalAlignment="Top" FontSize="12" BorderThickness="2,2,2,2" IsReadOnly="True"/>
+        <TextBox x:Name="areaOutput" HorizontalAlignment="Left" Margin="539,482,0,0" Text="" VerticalAlignment="Top" FontSize="12" BorderThickness="2,2,2,2" IsReadOnly="True"/>
+        <Slider HorizontalAlignment="Left" Margin="535,319,0,0" VerticalAlignment="Top" Width="73" Maximum="50" TickPlacement="None" ValueChanged="Slider_ValueChanged"/>
+        <Button Content="Calculate" HorizontalAlignment="Left" Margin="475,372,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBox x:Name="txtQuanity" HorizontalAlignment="Left" Margin="627,325,0,0" Text="" VerticalAlignment="Top" FontSize="12" BorderThickness="2,2,2,2" Width="20" IsReadOnly="True"/>
 
     </Grid>
 </Page>
